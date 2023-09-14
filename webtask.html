@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            height: 3850px;
+            width: 2000px;
+            background-color: rgb(106, 3, 54);
+            margin-left: 25%;
+            position: relative;
+
+        }
+
+        .cont {
+            height: 3650px;
+            width: 1950px;
+            background-color: ghostwhite;
+
+
+            position: absolute;
+
+            top: 100px;
+            left: 25px;
+        }
+
+        .cont1 {
+            height: 300px;
+            width: 1950px;
+            background-color: beige;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #logo {
+
+            height: 200px;
+            width: 450px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 40px;
+
+        }
+
+        #logimg {
+            height: 200px;
+            width: 450px;
+
+        }
+
+        #para {
+            font-size: 35px;
+            position: absolute;
+            right: 0px;
+            bottom: 40px;
+
+
+        }
+
+        #hrbox {
+            height: 80px;
+            width: 1950px;
+            background-color: beige;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+
+        hr {
+            border-width: 4px;
+            border-color: black;
+
+
+        }
+
+        .imgbox {
+            height: 900px;
+            width: 1950px;
+            background-color: red;
+
+        }
+
+        #image1 {
+            height: 900px;
+            width: 1950px;
+        }
+
+        /* #ibox1{
+            height:900px;
+            width:450px;
+            background-color: aqua;
+            float: left;
+
+         }
+        
+         #ibox2{
+            height:900px;
+            width:450px;
+            background-color:blueviolet;
+            float: left;
+
+         }
+         #ibox3{
+            height:900px;
+            width:1050px;
+            background-color:blue;
+            float: left;
+            position: relative;
+
+         }
+         #ibox4{
+            height:300px;
+            width:700px;
+            background-color:chartreuse;
+            float: left;
+            position: absolute;
+            bottom:20px;
+            right:20px;
+
+
+         } */
+        .textbox {
+            position: relative;
+            height: 880px;
+            width: 1950px;
+            background-color: beige;
+
+        }
+
+        .text1 {
+            height: 600px;
+            width: 1950px;
+            background-color: beige;
+            position: relative;
+        }
+
+        .text2 {
+            height: 200px;
+            width: 1950px;
+            background-color: beige;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0px;
+           
+        }
+
+
+
+
+        #text3 {
+            height: 80px;
+            width: 1920px;
+            background-color: rgb(106, 3, 54);
+            position: absolute;
+            right: 15px;
+
+        }
+
+        #para1 {
+            font-size: 38px;
+            position: absolute;
+            left: 20px;
+        }
+
+        #para3 {
+            position: absolute;
+            left: 20px;
+            font-size: 35px;
+            top: 80px;
+
+        }
+
+        .tex2 {
+            position: relative;
+        }
+
+        #para4 {
+            position: absolute;
+            right: 15px;
+            top: 75px;
+            font-size: 38px;
+
+        }
+
+        #para5 {
+            font-size: 35px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: beige;
+        }
+
+        .flexbox {
+            height: 500px;
+            width: 1950px;
+            padding: 0px 0px 0px 15px;
+            background-color: beige;
+
+            /* position: absolute; */
+
+            display: grid;
+            grid-template-columns: 920px 920px;
+            grid-template-rows: 200px 200px;
+            gap: 20px;
+
+
+
+        }
+
+        .b1 {
+            padding-top: 5px;
+            /* position: relative; */
+
+
+        }
+
+        .b2 {
+            /* background-color: beige; */
+            margin-top: 5px;
+            /* position: relative; */
+
+
+        }
+
+        .b3 {
+            /* background-color: beige; */
+            margin-top: 5px;
+            /* position: relative; */
+
+
+        }
+
+        .b4 {
+            /* background-color: beige; */
+            margin-top: 5px;
+            /* position: relative; */
+
+
+        }
+
+        #hr1 {
+            margin-top: 15px;
+            /* position: absolute;
+            bottom: 10px; */
+        }
+
+        #hr2 {
+            position: absolute;
+            bottom: 10px;
+        }
+
+
+        #space {
+            position: relative;
+            top: 200px;
+        }
+
+        p {
+            font-size: 40px;
+            ;
+        }
+
+        .textbox2 {
+            width: 1950px;
+            height: 220px;
+            background-color: beige;
+            padding-left: 15px;
+
+        }
+    #tbox3{
+        height: 100px;
+            width: 1920px;
+            background-color: gray;
+            padding-top: 25px;
+            color: antiquewhite;
+            padding-left: 5px;
+
+    }
+    .textbox3{
+        height:600px;
+        width:1950px;
+        background-color: beige;
+        display: flex;
+    }
+    #imgbox5{
+        height:550px;
+        width:750px;
+        background-color: beige;
+        background-image: url(/image/img4.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    #imgbox6{
+        height:550px;
+        width:1170px;
+        background-color: beige;
+        padding-left: 15px;
+        padding-top: 45px;
+        padding-right: 15px;
+    }
+    h1{
+        font-size: 45px;
+        color: brown;
+    }
+    .textbox4{
+        height:200px;
+        width:1950px;
+        background-color: beige;
+        padding-top: 90px;
+        padding-left: 15px;
+    }
+    .list1{
+        display: flex;
+        padding-top: 15px;;
+    }
+    .list1 li {
+        font-size: 38px;
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(106, 3, 54); 
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    #button{
+        width:50px;
+        height:50px;
+        margin-top: 10px;
+        
+    }
+ a{
+    text-decoration: none;
+    color:  rgb(106, 3, 54);
+    }
+ span{
+    font-weight: bold;
+ }
+
+ .list1:hover  #checkin a{
+    color: blue;
+ } 
+#checkin1 a:hover {
+    color: blue;
+ }  .list1:hover  #checkin2 a{
+    color: blue;
+ }  .list1:hover  #checkin3 a{
+    color: blue;
+ } 
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">
+            <div class="cont1">
+                <div id="logo"><img id="logimg" src="/image/logo.jpg"></div>
+                <p id="para">1st August 2013</p>
+
+
+
+            </div>
+            <div id="hrbox">
+                <hr>
+                <ul class="list1">
+                    <li id="checkin"><a href="#">Check-in |</a></li>
+                    <li id="checkin1"><a href="#">Bonus Qmiles |</a></li>
+                    <li id="checkin2"><a href="#">Holidays |</a></li>
+                    <li id="checkin3"><a href="#">Privilege Club </a></li>
+                </ul>
+            </div>
+            <div class="imgbox"><img id="image1" src="/image/img3.jpeg">
+                <div id="ibox1"></div>
+                <div id="ibox2"></div>
+                <div id="ibox3">
+                    <div id="ibox4"></div>
+                </div>
+
+            </div>
+
+            <div class="textbox">
+                <div class="text1">
+                    <p id="para1"><br>Dear Subscriber.<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam alias accusantium quas minima ipsum facilis, quis inventore delectus placeat saepe ab
+                        doloremque deleniti odio debitis. <br><br>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, eligendi. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.<br><br><br>*Terms and Conditions Apply</p>
+                </div>
+                <div class="text2 tex2">
+                    <hr>
+                    <p id="para3">SPECIAL FLIGHT OFFERS FROM INDIA</p>
+                    <p id="para4">View all offers <img id="button" src="/image/img1.jpeg"></p>
+                   
+                </div>
+                <div id="text3">
+                    <p id="para5">From Ahmedabad</p>
+                </div>
+            </div>
+            <div class="flexbox">
+                <div class="b1">
+                    <hr >
+                    <p><img id="button" src="/image/img1.jpeg">Chicago</p><br><br>
+                    <p>From 68,000 INR Economy Class</p>
+                </div>
+                <div class="b2">
+                    <hr>
+                    <p><img id="button" src="/image/img1.jpeg">New York</p><br><br>
+                    <p>From 68,000 INR Economy Class</p>
+                </diV>
+                <div class="b3">
+                    <hr>
+                    <hr id="space">
+                    <p><img id="button" src="/image/img1.jpeg">Houston</p><br><br>
+                    <p>From 68,000 INR Economy Class</p>
+                </div>
+                <div class="b4">
+                    <hr>
+                    <hr id="space">
+                    <p><img id="button" src="/image/img1.jpeg">Washington</p><br><br>
+                    <p>From 68,000 INR Economy Class</p>
+                </div>
+            </div>
+            <div class="textbox2">
+                <br><p>Terms and conditions apply</p>
+                <br><br><div id="tbox3"><p>EXCLUSIVE OFFER FOR STUDENT</p></div>
+
+
+
+            </div>
+            <div>
+            <div class="textbox3">
+                <div id="imgbox5"></div>
+                <div id="imgbox6"><h1>Exclusive offer for Student</h1><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores alias perferendis quae nemo repellat, pariatur soluta, hic optio laborum distinctio porro aut tempora doloribus minima et? Repellendus eligendi ab voluptatum, maxime quas quidem exercitationem vero dicta officia repellat. Explicabo minima molestias dolores obcaecati repudiandae quam impedit corporis cum unde nihil?</p>
+                <p><a href="#">Read more<img id="button" src="/image/img1.jpeg"></a></p>
+                </div>
+            
+             </div>
+             <hr>
+            </div>
+            <div class="textbox4">
+                <p>World's 5-star airline<span> qutarairways.com</span></p>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

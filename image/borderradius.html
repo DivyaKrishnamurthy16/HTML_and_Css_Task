@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border border-radius</title>
+    <style>
+        *{box-sizing: border-box;
+           margin:0px;
+           padding: 0px;
+           font-size:x-large;
+           font-weight: 600;
+        }
+          
+
+        .box{
+            height: 1850px;
+            width: 1850px;
+            background-color: aquamarine;
+            position: relative;
+           
+            
+          
+         
+        }
+           
+             #box1{
+            height: 300px;
+            width: 300px;
+            background-color: deeppink;
+            background-position: center;
+            border-top-left-radius: 50%;
+            position: absolute;
+            top:100px;
+            left:100px;
+            
+            
+
+        }
+        #para1{
+            position: absolute;
+            top:60px;
+            left:150px;
+            
+           
+          
+        } 
+        #box2{
+            height: 300px;
+            width: 300px;
+            background-color: deeppink;
+            border-top-right-radius:  50%;
+            position: absolute;
+            top:100px;
+            right: 550px;
+            left:550px;
+           
+            
+        }
+        #para2{
+            position: absolute;
+            top:60px;
+            left:600px;
+            
+           
+          
+        } 
+        #box3{
+            height: 300px;
+            width: 300px;
+            background-color: deeppink;
+            border-bottom-right-radius:  50%;
+            position: absolute;
+            top:100px;
+            right: 550px;
+            
+            
+            
+        }
+        #para3{
+            position: absolute;
+            top:60px;
+            right:550px;
+            
+           
+          
+        } 
+        #box4{
+            height: 300px;
+            width: 300px;
+            background-color:darksalmon;
+            border-radius: 15px;
+            position: absolute;
+            top:550px;
+            left:100px;
+        }
+        #para4{
+            position: absolute;
+            top:510px;
+            left:150px;
+            
+           
+          
+        } 
+        #box5{
+            height: 300px;
+            width: 300px;
+            background-color:darksalmon;
+            border-radius: 75px;
+            position: absolute;
+            top:550px;
+            left:550px;
+              
+            
+        }
+        #para5{
+            position: absolute;
+            top:510px;
+            left:600px;
+            
+           
+          
+        } 
+        #box6{
+            height: 300px;
+            width: 300px;
+            background-color:darksalmon;
+            border-radius: 105px; 
+            position: absolute;
+            top:550px;
+            right:550px;
+            
+        }
+        #para6{
+            position: absolute;
+            top:510px;
+            right:600px;
+            
+           
+          
+        } 
+         #box7{
+            height: 300px;
+            width: 300px;
+            background-color:lightskyblue;
+            position: absolute;
+            border-radius: 1%;
+            left:100px;
+            top:1000px; 
+            
+        }
+        #para7{
+            position: absolute;
+            top:960px;
+            left:150px;
+            
+           
+          
+        } 
+        #box8{
+            height: 300px;
+            width: 300px;
+            background-color: lightskyblue;
+            position: absolute;
+            border-radius: 10%;
+            left:550px;
+            top:1000px;
+        }
+        #para8{
+            position: absolute;
+            top:960px;
+            left:600px;
+            
+           
+          
+        } 
+        #box9{
+            height: 300px;
+            width: 300px;
+            background-color:lightskyblue;
+            position: absolute;
+            border-radius: 25%;
+            right:550px;
+            top:1000px;
+        }
+        #para9{
+            position: absolute;
+            top:960px;
+            right:600px;
+            
+           
+        }
+        
+         #box10{
+            height: 300px;
+            width: 300px;
+            background-color: teal;
+            border-radius: 60px 0px;
+            float:left;
+            position: absolute;
+            left:100px;
+            top:1450px;
+        } 
+        #para10{
+            position: absolute;
+            top:1400px;
+            left:150px;
+            
+           
+        }
+        #box11{
+            height: 300px;
+            width: 300px;
+            background-color: teal;
+            border-radius: 120px 0px;
+            position: absolute;
+            left:550px;
+            top:1450px;
+            
+        }
+        #para11{
+            position: absolute;
+            top:1400px;
+            left:600px;
+            
+           
+        }
+        #box12{
+            height: 300px;
+            width: 300px;
+            background-color: teal;
+            border-radius: 240px 0px;
+            position: absolute;
+            right:550px;
+            top:1450px;
+            
+        }  
+        #para12{
+            position: absolute;
+            top:1400px;
+            right:600px;
+            
+           
+        }
+        #box13{
+            height: 300px;
+            width: 300px;
+            background-color: deeppink;
+            border-bottom-left-radius: 50%;
+            position: absolute;
+            right:100px;
+            top:100px;
+            
+        }
+        #para13{
+            position: absolute;
+            top:60px;
+            right:100px;
+            
+           
+        }
+        #box14{
+            height: 300px;
+            width: 300px;
+            background-color:darksalmon;
+            border-radius: 150px;
+            position: absolute;
+            right:100px;
+            top:550px;
+            
+        }
+        #para14{
+            position: absolute;
+            top:510px;
+            right:100px;
+            
+           
+        }
+        #box15{
+            height: 300px;
+            width: 300px;
+            background-color:lightskyblue;
+            border-radius: 50%;
+            position: absolute;
+            right:100px;
+            top:1000px;
+            
+        }
+        #para15{
+            position: absolute;
+            top:960px;
+            right:150px;
+            
+           
+        }
+        #box16{
+            height: 300px;
+            width: 300px;
+            background-color:teal;
+            border-radius: 300px 0px;
+            position: absolute;
+            right:100px;
+            top:1450px;
+            
+        }
+        #para16{
+            position: absolute;
+            top:1400px;
+            right:150px;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+   
+        <div id="para1">
+        <p>border-radius-top-left</p></div>
+        <div id="para2">
+        <p>border-radius-top-right</p></div>
+        <div id="para3">
+        <p>border-radius-bottom-right</p></div>
+        <div id="para4">
+        <p>border-radius-bottom-left</p></div>
+        <div id="para5">
+        <p>border-radius:5px</p></div>
+        <div id="para6">
+        <p>border-radius:25px</p></div>
+        <div id="para7">
+        <p>border-radius:35px</p></div>
+        <div id="para8">
+        <p>border-radius:50px</p></div>
+        <div id="para9">
+        <p>border-radius:1%</p></div>
+        <div id="para10">
+        <p>border-radius:</p></div>
+        <div id="para11">
+        <p>border-radius-top-left</p></div>
+        <div id="para12">
+        <p>border-radius-top-left</p>
+        </div>
+        <div id="para13">
+            <p>border-radius-top-left</p>
+            </div>
+            <div id="para14">
+                <p>border-radius-top-left</p>
+                </div>
+                <div id="para15">
+                    <p>border-radius-top-left</p>
+                    </div>
+                    <div id="para16">
+                        <p>border-radius-top-left</p>
+                        </div>
+        
+        
+        <div id="box1"></div>
+        
+        <div id="box2"></div>
+       
+        <div id="box3"></div>
+       
+        
+        <div id="box4"></div>
+        
+        <div id="box5"></div> 
+      
+        <div id="box6"></div>
+        
+        <div id="box7"></div>
+        <div id="box8"></div>
+        <div id="box9"></div>
+       
+        <div id="box10"></div>
+        <div id="box11"></div>
+        <div id="box12"></div>
+        <div id="box13"></div>
+        <div id="box14"></div>
+        <div id="box15"></div>
+        <div id="box16"></div>
+
+
+
+    </div>
+</body>
+</html>

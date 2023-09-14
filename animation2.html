@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:1500px;
+            width:100%;
+            background-color: blue;
+            padding-left: 1000px;
+            padding-top: 200px;
+        }
+        .con1{
+           height: 200px;
+           width: 200px;
+            background-color: aqua;
+            
+            animation-name: anim1;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+       
+                
+        
+        @keyframes anim1{
+            0%{
+                transform: translateX(0px) translateY(0px) skew(45deg);
+                
+            }
+            25%{
+                transform: translateX(300px) translateY(300px) skew(-45deg);
+                background-color: chartreuse;
+            }
+             50%{
+                transform: translateX(0px) translateY(600px) skew(45deg);
+                background-color:blueviolet
+            }
+            75%{
+                transform: translateX(-300px) translateY(300px) skew(-45deg);
+                background-color:darkgreen;
+            } 
+        }
+           .con2{
+            height:200px;
+            width:200px;
+            background-color:chartreuse;
+            animation-name: anim2;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+         } 
+ 
+        @keyframes anim2{ 
+            0%{
+                transform: translateX(0px) translateY(0px) skew(45deg);
+            }
+                
+                
+           
+            25%{
+                transform: translateX(300px) translateY(300px) skew(-45deg);
+                background-color:darkgreen;
+                
+                
+
+            }
+           
+            
+             50%{
+                transform: translateX(0px) translateY(600px) skew(45deg);
+                background-color: chartreuse;
+            }
+            75%{
+                transform: translateX(-300px) translateY(300px) skew(-45deg);
+                background-color:blueviolet;
+            } 
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con1"></div>
+         <div class="con2"></div>
+    </div>
+</body>
+</html>

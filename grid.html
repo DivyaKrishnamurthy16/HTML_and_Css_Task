@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+        .container{
+            width:630px;
+            height:630px;
+            background-color: black;
+            display: grid;
+            gap:10px 10px;
+            grid-template-columns:200px 200px 200px;
+            grid-template-rows: 100px 200px 200px 100px auto;
+            
+           
+          
+            
+            
+            
+
+        }
+        .box1{
+            background-color: aqua;
+            align-items: center;
+            justify-content:center;
+            
+       
+        }
+         .container div:nth-child(1){
+           grid-row-start: 1;
+           grid-row-end: 2;
+           grid-column-start: 1;
+           grid-column-end: 4;
+        }
+         .container div:nth-child(2){
+           grid-row-start: 2;
+           grid-row-end:4;
+           grid-column-start: 1;
+           grid-column-end: 2;
+        }
+         .container div:nth-child(3){
+           grid-row-start: 2;
+           grid-row-end: 3;
+           grid-column-start: 2;
+           grid-column-end: 4;
+        }
+        .container div:nth-child(2){
+           grid-row-start: 2;
+           grid-row-end: 4;
+           grid-column-start: 1;
+           grid-column-end: 2;
+        }
+        .container div:nth-child(6){
+           grid-row-start: 4;
+           grid-row-end: 5;
+           grid-column-start: 1;
+           grid-column-end: 4;
+        }
+        .container div:nth-child(5){
+           grid-row-start: 3;
+           grid-row-end: 4;
+           grid-column-start: 3;
+           grid-column-end: 4;
+        }  */
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="box1"></div>
+<div class="box1"></div>   
+<div class="box1"></div>   
+<div class="box1"></div>
+<div class="box1"></div>   
+<div class="box1"></div>      
+
+
+
+</div>
+    
+</body>
+</html>
